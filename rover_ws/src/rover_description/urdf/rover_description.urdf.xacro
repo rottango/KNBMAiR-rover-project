@@ -7,12 +7,12 @@
     <xacro:property name="body_length" value="1.06"/>
     <xacro:property name="body_width" value="0.4"/>
     <xacro:property name="body_height" value="0.210"/>
-    <xacro:property name="front_camera_length" value="1.0"/>
-    <xacro:property name="front_camera_width" value="0.5"/>
-    <xacro:property name="front_camera_height" value="0.3"/>
-    <xacro:property name="middle_camera_length" value="1.0"/>
-    <xacro:property name="middlecamera_width" value="0.5"/>
-    <xacro:property name="middle_camera_height" value="0.3"/>
+    <xacro:property name="front_camera_length" value="0.1"/>
+    <xacro:property name="front_camera_width" value="0.1"/>
+    <xacro:property name="front_camera_height" value="0.1"/>
+    <xacro:property name="middle_camera_length" value="0.1"/>
+    <xacro:property name="middle_camera_width" value="0.1"/>
+    <xacro:property name="middle_camera_height" value="0.1"/>
     <xacro:property name="swingarm_length" value="0.0"/>
     <xacro:property name="swingarm_width" value="0.0"/>
     <xacro:property name="swingarm_height" value="0.0"/>
@@ -20,6 +20,7 @@
     <xacro:property name="offset_body_above_bottom_of_wheels" value="0.296152"/>
     <xacro:property name="wheel_spacing_from_middle" value="0.469475"/>
     <xacro:property name="distance_between_wheel_axis" value="0.8683"/>
+    <xacro:property name="middle_camera_height_above_rover" value="0.5"/>
 
     <xacro:include filename="$(find rover_description)/urdf/rover_include.urdf.xacro"/>
     <xacro:include filename="$(find rover_description)/urdf/rover_materials.urdf.xacro"/>
@@ -86,36 +87,36 @@
     width="${wheel_width}"
     />
     
-
-
     <link name="front_camera_link">
         <visual>
             <geometry>
-                <box size="0.1 0.1 0.1"/>
+                <box size="${front_camera_length} ${front_camera_width} ${front_camera_height}"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="red"/>
         </visual>
     </link>
 
     <joint name="front_camera_joint" type="fixed">
-        <parent link="base_link"/>
+        <parent link="body_link"/>
         <child link="front_camera_link"/>
-        <origin xyz="0 0 ${body_height/2 + 0.1}" rpy="0 0 0"/>
+        <origin xyz="${body_length/2} 0 ${body_height + front_camera_height/2}" rpy="0 0 0"/>
     </joint>
 
     <link name="middle_camera_link">
         <visual>
             <geometry>
-                <box size="0.1 0.1 0.1"/>
+                <box size="${middle_camera_length} ${middle_camera_width} ${middle_camera_height}"/>
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="blue"/>
         </visual>
     </link>
 
-    <joint name="middle__camera_joint" type="fixed">
-        <parent link="base_link"/>
+    <joint name="middle_camera_joint" type="fixed">
+        <parent link="body_link"/>
         <child link="middle_camera_link"/>
-        <origin xyz="0 0 ${body_height/2 + 0.1}" rpy="0 0 0"/>
+        <origin xyz="0 0 ${middle_camera_height_above_rover+body_height + front_camera_height/2}" rpy="0 0 0"/>
     </joint>
 
 
