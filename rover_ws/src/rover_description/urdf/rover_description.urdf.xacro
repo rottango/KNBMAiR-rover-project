@@ -40,6 +40,7 @@
             <geometry>
                 <box size="${body_length} ${body_width} ${body_height}"/>
             </geometry>
+            <origin xyz="0 0 ${body_height/2}" rpy="0 0 0"/>
         </collision>
     </link>
 
