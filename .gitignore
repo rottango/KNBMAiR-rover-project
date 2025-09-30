@@ -5,3 +5,11 @@ log/
 *.swp
 *.DS_Store
 
+.vscode/
+.idea/
+__pycache__/
+*.__pycache__
+*.pyo
+*.pyd
+.venv/
+venv/
