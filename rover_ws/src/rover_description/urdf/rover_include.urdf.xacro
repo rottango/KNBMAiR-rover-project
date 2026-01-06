@@ -1,1 +1,33 @@
-<!-- includes rover_description.urdf.xacro and rover materials -->
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="wheel" params="name parent xyz rpy radius width">
+        <joint name="${name}_joint" type="continuous">
+            <parent link="${parent}"/>
+            <child link="${name}_link"/>
+            <origin xyz="${xyz}" rpy="${rpy}"/>
+            <axis xyz="1 0 0"/>
+        </joint>
+]
+        <link name="${name}_link">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
+                <geometry>
+                    <cylinder radius="${radius}" length="${width}"/>
+                </geometry>
+                <material name="gray"/>
+            </visual>
+            <collision>
+            <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
+                <geometry>
+                    <cylinder radius="${radius}" length="${width}"/>
+                </geometry>
+            </collision>
+            <inertial>
+                <mass value="0.5"/>
+                <inertia ixx="0.001" iyy="0.001" izz="0.001"
+                        ixy="0" ixz="0" iyz="0"/>
+            </inertial>
+        </link>
+    </xacro:macro>
+
+</robot>
