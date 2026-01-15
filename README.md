@@ -1,6 +1,16 @@
-# KNBMAiR
+# command_panel
 
+A new Flutter project.
 
-watch https://www.youtube.com/watch?v=V_C8Cmv4fgk to learn how to turn on the rover_description.urdf
+## Getting Started
 
-All neccesary info regarding the usage of this workspace will be listed in this readme
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
