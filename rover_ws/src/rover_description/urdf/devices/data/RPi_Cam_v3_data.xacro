@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- POMIARY PODANE W MILIMETRACH -->
+    <!-- Raspberry Pi Camera HD v3 12MPx -->
+    <xacro:macro name="RPi_Cam_v3_data">
+        <xacro:property name="length" value="23.862" scope="parent" />
+        <xacro:property name="width" value="25.0" scope="parent" />
+        <xacro:property name="height" value="10.245" scope="parent" />
+        <xacro:property name="weight" value="0.004" scope="parent" />
+        <xacro:property name="ixx" value="0.000000145" scope="parent" />
+        <xacro:property name="ixy" value="0.000000000932" scope="parent" />
+        <xacro:property name="ixz" value="0.00000748" scope="parent" />
+        <xacro:property name="iyx" value="0.000000000932" scope="parent" />
+        <xacro:property name="iyy" value="0.000000171" scope="parent" />
+        <xacro:property name="iyz" value="0.0" scope="parent" />
+        <xacro:property name="izx" value="0.00000748" scope="parent" />
+        <xacro:property name="izy" value="0.0" scope="parent" />
+        <xacro:property name="izz" value="0.000000271" scope="parent" />
+        </xacro:macro>
+</robot>

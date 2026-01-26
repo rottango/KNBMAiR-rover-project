@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- POMIARY PODANE W MILIMETRACH -->
+    <!-- ALUMINIOWE TŁUMIKI TYLNE POgrubione SPRĘŻYNY 187 MM - 4 SZT. srebrne GPM ARRMA 1/5 KRATON 8S OUTCAST 8S -->
+    <xacro:macro name="Dampers_data">
+        <xacro:property name="length" value="172.854" scope="parent" />
+        <xacro:property name="width" value="20.0" scope="parent" />
+        <xacro:property name="height" value="0.0" scope="parent" />
+        <xacro:property name="weight" value="0.4" scope="parent" />
+        <xacro:property name="ixx" value="0.0" scope="parent" />
+        <xacro:property name="ixy" value="0.0" scope="parent" />
+        <xacro:property name="ixz" value="0.0" scope="parent" />
+        <xacro:property name="iyx" value="0.0" scope="parent" />
+        <xacro:property name="iyy" value="0.0" scope="parent" />
+        <xacro:property name="iyz" value="0.0" scope="parent" />
+        <xacro:property name="izx" value="0.0" scope="parent" />
+        <xacro:property name="izy" value="0.0" scope="parent" />
+        <xacro:property name="izz" value="0.0" scope="parent" />
+    </xacro:macro>
+</robot>

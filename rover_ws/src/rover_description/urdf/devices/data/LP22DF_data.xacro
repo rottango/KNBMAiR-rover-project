@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- POMIARY PODANE W MILIMETRACH -->
+    <!-- LP22DF -->
+    <xacro:macro name="LP22DF_data">
+        <xacro:property name="length" value="20.3" scope="parent" />
+        <xacro:property name="width" value="10.16" scope="parent" />
+        <xacro:property name="height" value="3.0" scope="parent" />
+        <xacro:property name="weight" value="0.0005" scope="parent" />
+        <xacro:property name="ixx" value="0.00000005928" scope="parent" />
+        <xacro:property name="ixy" value="0.000000001111" scope="parent" />
+        <xacro:property name="ixz" value="0.0000000002117" scope="parent" />
+        <xacro:property name="iyx" value="0.000000001111" scope="parent" />
+        <xacro:property name="iyy" value="0.00000001464" scope="parent" />
+        <xacro:property name="iyz" value="0.00000000056" scope="parent" />
+        <xacro:property name="izx" value="0.0000000002117" scope="parent" />
+        <xacro:property name="izy" value="0.00000000056" scope="parent" />
+        <xacro:property name="izz" value="0.00000007318" scope="parent" />
+    </xacro:macro>
+</robot>

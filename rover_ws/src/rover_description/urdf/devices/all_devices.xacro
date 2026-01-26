@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot">
+
+    <xacro:include filename="data/Active_Cooler_data.xacro" />
+    <xacro:include filename="data/AirMax_Sector_data.xacro" />
+    <xacro:include filename="data/Antena_data.xacro" />
+    <xacro:include filename="data/Battery_data.xacro" />
+    <xacro:include filename="data/BLDC_data.xacro" />
+    <xacro:include filename="data/Control_Box_data.xacro" />
+    <xacro:include filename="data/Dampers_data.xacro" />
+    <xacro:include filename="data/Driver_BLD120A_data.xacro" />
+    <xacro:include filename="data/Encoder_data.xacro" />
+    <xacro:include filename="data/GPS_data.xacro" />
+    <xacro:include filename="data/LP22DF_data.xacro" />
+    <xacro:include filename="data/MikroTik_data.xacro" />
+    <xacro:include filename="data/NoIR_Cam_data.xacro" />
+    <xacro:include filename="data/Pololu_8A_data.xacro" />
+    <xacro:include filename="data/RocketM2_data.xacro" />
+    <xacro:include filename="data/RPi_Cam_v3_data.xacro" />
+    <xacro:include filename="data/RPI5_data.xacro" />
+    <xacro:include filename="data/RPLidar_data.xacro" />
+    <xacro:include filename="data/Signal_Tower_data.xacro" />
+    <xacro:include filename="data/StepDown_5A_data.xacro" />
+    <xacro:include filename="data/STM32_data.xacro" />
+    <xacro:include filename="data/TCA9548A_data.xacro" />
+
+    <xacro:include filename="position.xacro" />
+    <xacro:include filename="materials.xacro" />
+</robot>

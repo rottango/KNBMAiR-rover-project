@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Raspberry Pi Active Cooler - aktywne chłodzenie - radiator + wentylator do Raspberry Pi 5 -->
+    <xacro:macro name="Active_Cooler_pos">
+        <xacro:property name="pos_x" value="0.0" scope="parent" />
+        <xacro:property name="pos_y" value="0.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    <!-- Ubiquiti AirMax Sector  -->
+    <xacro:macro name="AirMax_Sector_pos">
+        <xacro:property name="pos_x" value="1.0" scope="parent" />
+        <xacro:property name="pos_y" value="0.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- Antena dookolna -->
+    <xacro:macro name="Antena_pos">
+        <xacro:property name="pos_x" value="2.0" scope="parent" />
+        <xacro:property name="pos_y" value="0.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- AKUMULATOR LITOWO-JONOWY 24V 10..0AH LIFEPO4 WYSOKA WYDAJNOŚĆ,DŁUGA ŻYWOTNOŚĆ -->
+    <xacro:macro name="Battery_pos">
+        <xacro:property name="pos_x" value="3.0" scope="parent" />
+        <xacro:property name="pos_y" value="0.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- Silnik bezszczotkowy BLDC Nema23 125W 24VDC (1szt.) z przekładnia -->
+    <xacro:macro name="BLDC_pos">
+        <xacro:property name="pos_x" value="4.0" scope="parent" />
+        <xacro:property name="pos_y" value="0.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- FB1W-YW1B-V4E02-RIDEC-Kaseta sterownicza -->
+    <xacro:macro name="Control_Box_pos">
+        <xacro:property name="pos_x" value="0.0" scope="parent" />
+        <xacro:property name="pos_y" value="1.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- ALUMINIOWE TŁUMIKI TYLNE POgrubione SPRĘŻYNY 187 MM - 4 SZT. srebrne GPM ARRMA 1/5 KRATON 8S OUTCAST 8S -->
+    <xacro:macro name="Dampers_pos">
+        <xacro:property name="pos_x" value="1.0" scope="parent" />
+        <xacro:property name="pos_y" value="1.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- Sterownik silnika bezszczotkowego BLDC BLD-120A 10A 12-48 VDC (4 szt.) -->
+    <xacro:macro name="Driver_BLD120A_pos">
+        <xacro:property name="pos_x" value="2.0" scope="parent" />
+        <xacro:property name="pos_y" value="1.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- Moduł enkodera magnetycznego z układem AS56 -->
+    <xacro:macro name="Encoder_pos">
+        <xacro:property name="pos_x" value="3.0" scope="parent" />
+        <xacro:property name="pos_y" value="1.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- Qwiic GPS Dead Reckoning Breakout -->
+    <xacro:macro name="GPS_pos">
+        <xacro:property name="pos_x" value="4.0" scope="parent" />
+        <xacro:property name="pos_y" value="1.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- LP22DF -->
+    <xacro:macro name="LP22DF_pos">
+        <xacro:property name="pos_x" value="0.0" scope="parent" />
+        <xacro:property name="pos_y" value="2.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- MikroTik GrooveA 52 ac (RBGrooveGA-52HPacn) -->
+    <xacro:macro name="MikroTik_pos">
+        <xacro:property name="pos_x" value="1.0" scope="parent" />
+        <xacro:property name="pos_y" value="2.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+     <!-- Raspberry Pi NoIR Camera HD v3 12MPx -->
+     <xacro:macro name="NoIR_Cam_pos">
+        <xacro:property name="pos_x" value="2.0" scope="parent" />
+        <xacro:property name="pos_y" value="3.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- D36V50F5 - przetwornica step-down 5V 8A - Pololu 4091 -->
+    <xacro:macro name="Pololu_8A_pos">
+        <xacro:property name="pos_x" value="3.0" scope="parent" />
+        <xacro:property name="pos_y" value="3.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- UBIQUITI ROCKETM2 -->
+    <xacro:macro name="RocketM2_pos">
+        <xacro:property name="pos_x" value="4.0" scope="parent" />
+        <xacro:property name="pos_y" value="3.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- Raspberry Pi Camera HD v3 12MPx -->
+    <xacro:macro name="RPi_Cam_v3_pos">
+        <xacro:property name="pos_x" value="0.0" scope="parent" />
+        <xacro:property name="pos_y" value="4.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- RASPBERRY PI 5 -->
+    <xacro:macro name="RPI5_pos">
+        <xacro:property name="pos_x" value="1.0" scope="parent" />
+        <xacro:property name="pos_y" value="4.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- Skaner laserowy RPLidar A2M12 - 360 stopni - 12m -->
+    <xacro:macro name="RPLidar_pos">
+        <xacro:property name="pos_x" value="2.0" scope="parent" />
+        <xacro:property name="pos_y" value="4.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- HBJD-40/D/3/RYG/24AC/DC/BONPOW-Kolumna sygnalizacyjna  -->
+    <xacro:macro name="Signal_Tower_pos">
+        <xacro:property name="pos_x" value="3.0" scope="parent" />
+        <xacro:property name="pos_y" value="4.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- Moduł przetwornicy DC-DC Step-Down 1,25-36V 5A -->
+    <xacro:macro name="StepDown_5A_pos">
+        <xacro:property name="pos_x" value="4.0" scope="parent" />
+        <xacro:property name="pos_y" value="4.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- STM32 NUCLEO-H755ZI-Q - STM32H755ZIT6 ARM Cortex M7/M4 -->
+    <xacro:macro name="STM32_pos">
+        <xacro:property name="pos_x" value="0.0" scope="parent" />
+        <xacro:property name="pos_y" value="5.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+    <!-- TCA9548A - moduł z multiplekserem I2C - Adafruit 2717 -->
+    <xacro:macro name="TCA9548A_pos">
+        <xacro:property name="pos_x" value="1.0" scope="parent" />
+        <xacro:property name="pos_y" value="5.0" scope="parent" />
+        <xacro:property name="pos_z" value="0.0" scope="parent" />
+        <xacro:property name="pos_r" value="0.0" scope="parent" />
+        <xacro:property name="pos_p" value="0.0" scope="parent" />
+        <xacro:property name="pos_yy" value="0.0" scope="parent" />
+    </xacro:macro>
+    
+</robot>

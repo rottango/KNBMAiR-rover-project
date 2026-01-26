@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- POMIARY PODANE W MILIMETRACH -->
+    <!-- D36V50F5 - przetwornica step-down 5V 8A - Pololu 4091 -->
+    <xacro:macro name="Pololu_8A_data">
+        <xacro:property name="length" value="9.474" scope="parent" />
+        <xacro:property name="width" value="25.4" scope="parent" />
+        <xacro:property name="height" value="25.4" scope="parent" />
+        <xacro:property name="weight" value="0.007" scope="parent" />
+        <xacro:property name="ixx" value="0.0000003591" scope="parent" />
+        <xacro:property name="ixy" value="0.00000001877" scope="parent" />
+        <xacro:property name="ixz" value="0.00000001221" scope="parent" />
+        <xacro:property name="iyx" value="0.00000001877" scope="parent" />
+        <xacro:property name="iyy" value="0.0000004412" scope="parent" />
+        <xacro:property name="iyz" value="0.00000002258" scope="parent" />
+        <xacro:property name="izx" value="0.00000001221" scope="parent" />
+        <xacro:property name="izy" value="0.00000002258" scope="parent" />
+        <xacro:property name="izz" value="0.0000007323" scope="parent" />
+    </xacro:macro>
+</robot>

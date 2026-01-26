@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- POMIARY PODANE W MILIMETRACH -->
+    <!-- RASPBERRY PI 5 -->
+    <xacro:macro name="RPI5_data">
+        <xacro:property name="length" value="85.0" scope="parent" />
+        <xacro:property name="width" value="56.0" scope="parent" />
+        <xacro:property name="height" value="17.0" scope="parent" />
+        <xacro:property name="weight" value="0.05" scope="parent" />
+        <xacro:property name="ixx" value="0.00001453" scope="parent" />
+        <xacro:property name="ixy" value="0.000003547" scope="parent" />
+        <xacro:property name="ixz" value="0.0000002452" scope="parent" />
+        <xacro:property name="iyx" value="0.000003547" scope="parent" />
+        <xacro:property name="iyy" value="0.00004497" scope="parent" />
+        <xacro:property name="iyz" value="0.00000006532" scope="parent" />
+        <xacro:property name="izx" value="0.0000002452" scope="parent" />
+        <xacro:property name="izy" value="0.00000006532" scope="parent" />
+        <xacro:property name="izz" value="0.00003299" scope="parent" />
+    </xacro:macro>
+</robot>

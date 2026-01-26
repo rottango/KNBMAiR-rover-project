@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- POMIARY PODANE W MILIMETRACH -->
+    <!-- MikroTik GrooveA 52 ac (RBGrooveGA-52HPacn) -->
+    <xacro:macro name="MikroTik_data">
+        <xacro:property name="length" value="44.0" scope="parent" />
+        <xacro:property name="width" value="44.0" scope="parent" />
+        <xacro:property name="height" value="462.282" scope="parent" />
+        <xacro:property name="weight" value="0.193" scope="parent" />
+        <xacro:property name="ixx" value="0.001" scope="parent" />
+        <xacro:property name="ixy" value="0.0" scope="parent" />
+        <xacro:property name="ixz" value="0.0000162" scope="parent" />
+        <xacro:property name="iyx" value="0.0" scope="parent" />
+        <xacro:property name="iyy" value="0.0" scope="parent" />
+        <xacro:property name="iyz" value="0.0000133" scope="parent" />
+        <xacro:property name="izx" value="0.0000162" scope="parent" />
+        <xacro:property name="izy" value="0.0000133" scope="parent" />
+        <xacro:property name="izz" value="0.001" scope="parent" />
+    </xacro:macro>
+</robot>

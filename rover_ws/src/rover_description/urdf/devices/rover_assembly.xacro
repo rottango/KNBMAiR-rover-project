@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="all_devices.xacro" />
+    <xacro:include filename="factory.xacro" />
+
+    <xacro:macro name="build_robot" params="parent">
+        
+        <xacro:insert_component 
+            name="Active_Cooler" 
+            prefix="cooler" 
+            parent="rpi5_link" 
+            material="mechanics_thermal" />
+
+        <xacro:insert_component 
+            name="AirMax_Sector" 
+            prefix="sector_ant" 
+            parent="${parent}" 
+            material="wireless_communication" />
+
+        <xacro:insert_component 
+            name="Antena" 
+            prefix="wifi_ant" 
+            parent="router_link" 
+            material="wireless_communication" />
+
+        <xacro:insert_component 
+            name="Battery" 
+            prefix="main_battery" 
+            parent="${parent}" 
+            material="power_energy" />
+
+        <xacro:insert_component 
+            name="BLDC" 
+            prefix="motor" 
+            parent="${parent}" 
+            material="actuators_drives" />
+
+        <xacro:insert_component 
+            name="Control_Box" 
+            prefix="box" 
+            parent="${parent}" 
+            material="mechanics_thermal" />
+
+        <xacro:insert_component 
+            name="Dampers" 
+            prefix="damper_1" 
+            parent="${parent}" 
+            material="mechanics_thermal" />
+
+        <xacro:insert_component 
+            name="Driver_BLD120A" 
+            prefix="motor_driver" 
+            parent="${parent}" 
+            material="actuators_drives" />
+
+        <xacro:insert_component 
+            name="Encoder" 
+            prefix="encoder_1" 
+            parent="${parent}" 
+            material="sensors_perception" />
+
+        <xacro:insert_component 
+            name="GPS" 
+            prefix="gps" 
+            parent="${parent}" 
+            material="sensors_perception" />
+
+        <xacro:insert_component 
+            name="LP22DF" 
+            prefix="fan_extra" 
+            parent="${parent}" 
+            material="mechanics_thermal" />
+
+        <xacro:insert_component 
+            name="MikroTik" 
+            prefix="router" 
+            parent="${parent}" 
+            material="wireless_communication" />
+
+        <xacro:insert_component 
+            name="NoIR_Cam" 
+            prefix="cam_noir" 
+            parent="rpi5_link" 
+            material="sensors_perception" />
+
+        <xacro:insert_component 
+            name="Pololu_8A" 
+            prefix="pololu" 
+            parent="${parent}" 
+            material="power_energy" />
+
+        <xacro:insert_component 
+            name="RocketM2" 
+            prefix="rocket" 
+            parent="${parent}" 
+            material="wireless_communication" />
+
+        <xacro:insert_component 
+            name="RPI5" 
+            prefix="rpi5" 
+            parent="${parent}" 
+            material="central_control_unit" />
+
+        <xacro:insert_component 
+            name="RPi_Cam_v3" 
+            prefix="cam_v3" 
+            parent="rpi5_link" 
+            material="sensors_perception" />
+
+        <xacro:insert_component 
+            name="RPLidar" 
+            prefix="lidar" 
+            parent="${parent}" 
+            material="sensors_perception" />
+
+        <xacro:insert_component 
+            name="Signal_Tower" 
+            prefix="tower" 
+            parent="${parent}" 
+            material="signaling_ui" />
+
+        <xacro:insert_component 
+            name="StepDown_5A" 
+            prefix="step_down" 
+            parent="${parent}" 
+            material="power_energy" />
+
+        <xacro:insert_component 
+            name="STM32" 
+            prefix="stm32" 
+            parent="${parent}" 
+            material="central_control_unit" />
+
+        <xacro:insert_component 
+            name="TCA9548A" 
+            prefix="i2c_mux" 
+            parent="rpi5_link" 
+            material="power_energy" />
+
+    </xacro:macro>
+</robot>

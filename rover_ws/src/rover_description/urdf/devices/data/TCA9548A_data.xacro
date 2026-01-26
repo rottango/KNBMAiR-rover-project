@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- POMIARY PODANE W MILIMETRACH -->
+    <!-- TCA9548A - moduł z multiplekserem I2C - Adafruit 2717 -->
+    <xacro:macro name="TCA9548A_data">
+        <xacro:property name="length" value="30.48" scope="parent" />
+        <xacro:property name="width" value="17.78" scope="parent" />
+        <xacro:property name="height" value="3.44" scope="parent" />
+        <xacro:property name="weight" value="0.004" scope="parent" />
+        <xacro:property name="ixx" value="0.000000246" scope="parent" />
+        <xacro:property name="ixy" value="0.000000000499" scope="parent" />
+        <xacro:property name="ixz" value="0.0" scope="parent" />
+        <xacro:property name="iyx" value="0.000000000499" scope="parent" />
+        <xacro:property name="iyy" value="0.0000000843" scope="parent" />
+        <xacro:property name="iyz" value="0.0" scope="parent" />
+        <xacro:property name="izx" value="0.0" scope="parent" />
+        <xacro:property name="izy" value="0.0" scope="parent" />
+        <xacro:property name="izz" value="0.000000328" scope="parent" />
+    </xacro:macro>
+</robot>

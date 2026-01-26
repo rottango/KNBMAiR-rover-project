@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- Jednostka centralna i sterowanie: Raspberry Pi 5, STM32 NUCLEO -->
+    <material name="central_control_unit">
+        <color rgba="0.0 0.8 0.0 1.0"/>
+    </material>
+    <!-- System percepcji i czujników: RPLidar, kamery -->
+    <material name="sensors_perception">
+        <color rgba="0.0 0.0 0.8 1.0"/>
+    </material>
+    <!-- Napęd i mechanizmy wykonawcze: silniki BLDC Nema23, sterowniki BLD-120A-->
+    <material name="actuators_drives">
+        <color rgba="0.3 0.3 0.3 1.0"/>
+    </material>
+    <!-- Komunikacja bezprzewodowa:  MikroTik, Ubiquiti, antena-->
+    <material name="wireless_communication">
+        <color rgba="0.6 0.0 0.6 1.0"/>
+    </material>
+    <!-- Zasilanie i konwersja energii: LiFePO4, przetwornice Step-Down, multiplekser I2C-->
+    <material name="power_energy">
+        <color rgba="1.0 0.5 0.0 1.0"/>
+    </material>
+    <!-- Mechanika i gospodarka cieplna: tłumiki, Raspberry Pi Active Cooler, kasetę sterowniczą-->
+    <material name="mechanics_thermal">
+        <color rgba="0.75 0.75 0.75 1.0"/>
+    </material>
+    <!-- Mechanika i gospodarka cieplna: BONPOW-->
+    <material name="signaling_ui">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+    </material>
+
+</robot>

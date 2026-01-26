@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="generic_box_component.xacro" />
+
+    <xacro:macro name="insert_component" params="name material prefix parent">
+        <xacro:call macro="${name}_data" /> 
+        <xacro:call macro="${name}_pos" />
+        <xacro:generic_box 
+            prefix="${prefix}" 
+            parent="${parent}"
+            material="${material}"
+            
+            l="${length / 1000.0}" 
+            w="${width / 1000.0}" 
+            h="${height / 1000.0}"
+            
+            mass="${weight}"
+            
+            ixx="${ixx}" ixy="${ixy}" ixz="${ixz}"
+            iyy="${iyy}" iyz="${iyz}" izz="${izz}"
+            
+            x="${pos_x / 1000.0}" 
+            y="${pos_y / 1000.0}" 
+            z="${pos_z / 1000.0}"
+            r="${pos_r}" 
+            p="${pos_p}" 
+            yy="${pos_yy}"
+        />
+            
+    </xacro:macro>
+</robot>

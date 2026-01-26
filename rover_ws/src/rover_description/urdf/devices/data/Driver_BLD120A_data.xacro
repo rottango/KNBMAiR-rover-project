@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- POMIARY PODANE W MILIMETRACH -->
+    <!-- Sterownik silnika bezszczotkowego BLDC BLD-120A 10A 12-48 VDC (4 szt.) -->
+    <xacro:macro name="Driver_BLD120A_data">
+        <xacro:property name="length" value="90.0" scope="parent" />
+        <xacro:property name="width" value="143.0" scope="parent" />
+        <xacro:property name="height" value="33.0" scope="parent" />
+        <xacro:property name="weight" value="0.6" scope="parent" />
+        <xacro:property name="ixx" value="0.001" scope="parent" />
+        <xacro:property name="ixy" value="0.0000000905" scope="parent" />
+        <xacro:property name="ixz" value="0.0000096" scope="parent" />
+        <xacro:property name="iyx" value="0.0000000905" scope="parent" />
+        <xacro:property name="iyy" value="0.0" scope="parent" />
+        <xacro:property name="iyz" value="0.000000613" scope="parent" />
+        <xacro:property name="izx" value="0.0000096" scope="parent" />
+        <xacro:property name="izy" value="0.000000613" scope="parent" />
+        <xacro:property name="izz" value="0.001" scope="parent" />
+    </xacro:macro>
+</robot>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- POMIARY PODANE W MILIMETRACH -->
+    <!-- Silnik bezszczotkowy BLDC Nema23 125W 24VDC (1szt.) z przekładnia -->
+    <xacro:macro name="BLDC_data">
+        <xacro:property name="length" value="208.0" scope="parent" />
+        <xacro:property name="width" value="60.0" scope="parent" />
+        <xacro:property name="height" value="60.0" scope="parent" />
+        <xacro:property name="weight" value="2.02" scope="parent" />
+        <xacro:property name="ixx" value="0.006" scope="parent" />
+        <xacro:property name="ixy" value="0.00000000854" scope="parent" />
+        <xacro:property name="ixz" value="0.00000224" scope="parent" />
+        <xacro:property name="iyx" value="0.00000000854" scope="parent" />
+        <xacro:property name="iyy" value="0.006" scope="parent" />
+        <xacro:property name="iyz" value="0.00000131" scope="parent" />
+        <xacro:property name="izx" value="0.00000224" scope="parent" />
+        <xacro:property name="izy" value="0.00000131" scope="parent" />
+        <xacro:property name="izz" value="0.001" scope="parent" />
+    </xacro:macro>
+</robot>

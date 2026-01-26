@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- POMIARY PODANE W MILIMETRACH -->
+    <!-- Qwiic GPS Dead Reckoning Breakout -->
+    <xacro:macro name="GPS_data">
+        <xacro:property name="length" value="41.0" scope="parent" />
+        <xacro:property name="width" value="33.0" scope="parent" />
+        <xacro:property name="height" value="4.0" scope="parent" />
+        <xacro:property name="weight" value="0.0016" scope="parent" />
+        <xacro:property name="ixx" value="0.000000165" scope="parent" />
+        <xacro:property name="ixy" value="0.00000003001" scope="parent" />
+        <xacro:property name="ixz" value="0.0000000009051" scope="parent" />
+        <xacro:property name="iyx" value="0.00000003001" scope="parent" />
+        <xacro:property name="iyy" value="0.0000002385" scope="parent" />
+        <xacro:property name="iyz" value="0.0000000008947" scope="parent" />
+        <xacro:property name="izx" value="0.0000000009051" scope="parent" />
+        <xacro:property name="izy" value="0.0000000008947" scope="parent" />
+        <xacro:property name="izz" value="0.0000004017" scope="parent" />
+    </xacro:macro>
+</robot>

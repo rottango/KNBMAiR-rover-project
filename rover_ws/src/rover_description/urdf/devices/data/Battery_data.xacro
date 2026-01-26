@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- POMIARY PODANE W MILIMETRACH -->
+    <!-- AKUMULATOR LITOWO-JONOWY 24V 100AH LIFEPO4 WYSOKA WYDAJNOŚĆ,DŁUGA ŻYWOTNOŚĆ -->
+    <xacro:macro name="Battery_data">
+        <xacro:property name="length" value="482.6" scope="parent" />
+        <xacro:property name="width" value="170.1" scope="parent" />
+        <xacro:property name="height" value="241.0" scope="parent" />
+        <xacro:property name="weight" value="21.0" scope="parent" />
+        <xacro:property name="ixx" value="0.51" scope="parent" />
+        <xacro:property name="ixy" value="0.0" scope="parent" />
+        <xacro:property name="ixz" value="0.0" scope="parent" />
+        <xacro:property name="iyx" value="0.0" scope="parent" />
+        <xacro:property name="iyy" value="0.152" scope="parent" />
+        <xacro:property name="iyz" value="0.0" scope="parent" />
+        <xacro:property name="izx" value="0.0" scope="parent" />
+        <xacro:property name="izy" value="0.0" scope="parent" />
+        <xacro:property name="izz" value="0.459" scope="parent" />
+    </xacro:macro>
+</robot>

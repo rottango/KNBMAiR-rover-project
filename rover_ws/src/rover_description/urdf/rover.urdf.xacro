@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="my_modular_robot">
+
+    <xacro:include filename="devices/materials.xacro" />
+    <xacro:include filename="devices/rover_assembly.xacro" />
+
+    <link name="base_link"/>
+
+    <xacro:build_robot parent="base_link" />
+
+</robot>
