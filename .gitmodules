@@ -1,0 +1,18 @@
+[submodule "rover_ws/src/ros2_bldc_driver"]
+	path = rover_ws/src/ros2_bldc_driver
+	url = git@github.com:rottango/ros2_bldc_driver.git
+[submodule "rover_ws/src/ros2_encoder_driver"]
+	path = rover_ws/src/ros2_encoder_driver
+	url = git@github.com:rottango/ros2_encoder_driver.git
+[submodule "rover_ws/src/ros2_sensors_drivers"]
+	path = rover_ws/src/ros2_sensors_drivers
+	url = git@github.com:rottango/ros2_sensors_drivers.git
+[submodule "rover_ws/src/ros2_stm32_rsbpi5_communication"]
+	path = rover_ws/src/ros2_stm32_rsbpi5_communication
+	url = git@github.com:rottango/ros2_stm32_rsbpi5_communication.git
+[submodule "rover_ws/src/ros2_remote_communication"]
+	path = rover_ws/src/ros2_remote_communication
+	url = git@github.com:rottango/ros2_remote_communication.git
+[submodule "rover_ws/src/ros2_lidar_driver"]
+	path = rover_ws/src/ros2_lidar_driver
+	url = git@github.com:rottango/ros2_lidar_driver.git
