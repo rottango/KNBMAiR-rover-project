@@ -16,3 +16,9 @@
 [submodule "rover_ws/src/ros2_lidar_driver"]
 	path = rover_ws/src/ros2_lidar_driver
 	url = git@github.com:rottango/ros2_lidar_driver.git
+[submodule "rover_ws/src/rover_command_panel"]
+	path = rover_ws/src/rover_command_panel
+	url = git@github.com:rottango/rover_command_panel.git
+[submodule "rover_ws/src/ros2_i2c_driver"]
+	path = rover_ws/src/ros2_i2c_driver
+	url = git@github.com:rottango/ros2_i2c_driver.git
